@@ -52,4 +52,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ### HTMLParser.js is covered by the Mozilla Public Licence.  
-See that file for details of its licensing and copyright info.
+Please see that file for details of its licensing and copyright info.
