@@ -53,12 +53,16 @@ var attributesToText = function (attrs){
   return attrText;
 };
 
+var memo = {};
 var pad = function (depth){
-  var space = "";
-  for(var i = 0; i < depth; i++){
-    space += "  ";
+  if(!memo[""+depth]){
+    var space = "";
+    for(var i = 0; i < depth; i++){
+      space += "  ";
+    }
+    memo[""+depth] = space;
   }
-  return space;
+  return memo[""+depth];
 };
 
 

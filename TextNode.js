@@ -15,6 +15,10 @@ TextNode.prototype = {
   },
   get nodeValue (){
     return this.text;
+  },
+  destroy : function (){
+    this.text = null;
+   // this = null;
   }
 }
 module.exports = TextNode;

@@ -53,6 +53,12 @@ HasChildNodes.prototype = {
     }else{
       this.childNodes = NodeList();
     }
-  }
+  },
+  destroy : function (){
+    _.each(this.childNodes, function (node){
+      node.destroy();
+    });
+    this.childNodes = null;
+  }  
 }
 module.exports = HasChildNodes;
